@@ -51,3 +51,6 @@ function displayTemperature(response) {
   let currentDate = new Date();
   
   currentDateELement.innerHTML = formatDate(currentDate);
+
+module.exports = {
+  entry: 'index.html}
