@@ -4,6 +4,13 @@ function displayTemperature(response) {
     let cityElement = document.querySelector("#current-city");
     cityElement.innerHTML = response.data.city;
     temperatureElement.innerHTML= Math.round(temperature);
+    let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windSpeedElement = document.querySelector("#wind-speed");
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
+    
   }
   
   function search(event) {
