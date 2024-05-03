@@ -59,3 +59,12 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 
 searchCity("Paris");
+
+let forecast = document.querySelector("forecast");
+forecast. innerHTML =
+
+<div class "weather-forecast-day> Tue</div>
+<div class = "weather-forecast-date"></div>
+<div class ="weather-forecast-icon"></div>
+<div class = "weather-forecast-temperature"></div>
+<div class = "weather-forecast-temperature"></div>
