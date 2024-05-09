@@ -2,6 +2,51 @@ body {
   background-color: #f9f7fe;
   font-family: "Roboto", sans-serif;
 }
+.rainy-background {
+  background-image: linear-gradient(to bottom, #87CEEB, #56B3FA);
+  background-size: 100% 300px;
+  background-position: 0% 100%;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.rainy-background.rainy {
+  background-position: 0% 0%;
+  animation: rain 3s linear infinite;
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: #F2C464;
+  border-radius: 50%;
+}
+
+.hot .sun {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 a {
   color: #885df1;
 }
