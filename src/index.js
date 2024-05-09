@@ -10,14 +10,13 @@ function refreshWeather(response) {
   let iconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.city;
-     timeElement.innerHTML = formatDate(date);
-        descriptionElement.innerHTML = response.data.condition.description;
-        humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
-        windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
-        temperatureElement.innerHTML = Math.round(temperature);
+  timeElement.innerHTML = formatDate(date);
+  descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+  temperatureElement.innerHTML = Math.round(temperature);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
-
 
 function formatDate(date) {
   let minutes = date.getMinutes();
@@ -49,26 +48,11 @@ function searchCity(city) {
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
-  let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = searchInput.value;
-  searchCity(searchInput.value)
+
+  searchCity(searchInput.value);
 }
-
-function displayForecast ();
-let forecast = docume.querySelector("#forecast");
-forecast. innerHTML =
-`<div class = "weather-forecast>"
-<div class "weather-forecast-day> Tue</div>
-<div class = "weather-forecast-date"></div>
-<div class ="weather-forecast-icon"></div>
-<div class = "weather-forecast-temperature"></div>
-<div class = "weather-forecast-temperature"></div>
-
-<div/>`;
-
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
-
 
 searchCity("Paris");
