@@ -17,6 +17,23 @@ function refreshWeather(response) {
   temperatureElement.innerHTML = Math.round(temperature);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
+const body = document.body;
+
+if (weather === 'rain') {
+  body.classList.add('rainy-background');
+  body.classList.add('rainy');
+} else {
+  body.classList.remove('rainy-background');
+  body.classList.remove('rainy');
+}
+
+const weatherContainer = document.querySelector('.weather-container');
+
+if (weather === 'hot') {
+  weatherContainer.classList.add('hot');
+} else {
+  weatherContainer.classList.remove('hot');
+}
 
 function formatDate(date) {
   let minutes = date.getMinutes();
