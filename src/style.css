@@ -8,10 +8,10 @@ a {
 }
 
 .weather-app {
-  background: hwb(0,0,0 0.1);
+  background: hsl(222, 52%, 61%);
   max-width: 600px;
   margin: 45px auto;
-  box-shadow: 0 30px 50px black;
+  box-shadow: 0 30px 50px rgb(31, 30, 30);
   border-radius: 16px;
   padding: 30px;
 }
