@@ -1,5 +1,5 @@
 body {
-  background-color:hwb(210 86% 1%); 
+  background-color:hwb(208 91% 3%); 
   font-family:"Roboto", sans-serif;
 }
 
@@ -11,7 +11,7 @@ a {
   background: hsl(222, 52%, 61%);
   max-width: 600px;
   margin: 45px auto;
-  box-shadow: 0 30px 50px rgb(31, 30, 30);
+  box-shadow: 0 30px 50px rgb(97, 94, 94);
   border-radius: 16px;
   padding: 30px;
 }
