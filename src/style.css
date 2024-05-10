@@ -2,54 +2,11 @@ body {
   background-color: #f9f7fe;
   font-family: "Roboto", sans-serif;
 }
-.rainy-background {
-  background-image: linear-gradient(to bottom, #87CEEB, #56B3FA);
-  background-size: 100% 300px;
-  background-position: 0% 100%;
-  transition: background-position 0.5s ease-in-out;
-}
-
-.rainy-background.rainy {
-  background-position: 0% 0%;
-  animation: rain 3s linear infinite;
-}
-
-@keyframes rain {
-  0% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-.sun {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  background-color: #F2C464;
-  border-radius: 50%;
-}
-
-.hot .sun {
-  animation: rotate 5s linear infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
 
 a {
   color: #885df1;
 }
+
 .weather-app {
   background: white;
   max-width: 600px;
@@ -58,6 +15,7 @@ a {
   border-radius: 16px;
   padding: 30px;
 }
+
 header {
   border-bottom: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
@@ -81,43 +39,53 @@ header {
   border-radius: 6px;
   color: white;
 }
+
 main {
   padding: 30px 0;
 }
+
 .weather-app-data {
   display: flex;
   justify-content: space-between;
 }
+
 .weather-app-city {
   margin: 0;
   font-size: 38px;
   line-height: 48px;
 }
+
 .weather-app-details {
   font-size: 16px;
   color: rgba(39, 33, 66, 0.4);
   line-height: 24px;
   font-weight: 500;
 }
+
 .weather-app-details strong {
   color: #f65282;
 }
+
 .weather-app-temperature-container {
   display: flex;
 }
+
 .weather-app-icon {
   width: 88px;
   height: 88px;
 }
+
 .weather-app-temperature {
   font-size: 88px;
   line-height: 88px;
   font-weight: bold;
 }
+
 .weatehr-app-unit {
   margin-top: 6px;
   font-size: 28px;
 }
+
 footer {
   border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;
